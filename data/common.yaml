@@ -24,4 +24,4 @@ puppet_applocker::settings::registry_options:
     key: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\SrpV2\Exe\18c57223-831c-46a0-bb7d-d655629814cf'
     value: 'Value'
     type: 'string'
-    data: '<FilePathRule Id=\"18c57223-831c-46a0-bb7d-d655629814cf\" Name=\"%PROGRAMFILES%\\*\" Description=\"\" UserOrGroupSid=\"S-1-1-0\" Action=\"Allow\"><Conditions><FilePathCondition Path=\"%PROGRAMFILES%\\*\"/></Conditions></FilePathRule>'
+    data: "<FilePathRule Id=\"18c57223-831c-46a0-bb7d-d655629814cf\" Name=\"%PROGRAMFILES%\\*\" Description=\"\" UserOrGroupSid=\"S-1-1-0\" Action=\"Allow\"><Conditions><FilePathCondition Path=\"%PROGRAMFILES%\\*\"/></Conditions></FilePathRule>"
