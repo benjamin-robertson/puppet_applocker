@@ -5,11 +5,41 @@ puppet_applocker::settings::registry_options:
     value: 'AllowWindows'
     type: 'dword'
     data: '00000000'
+  HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\SrpV2\Appx\EnforcementMode:
+    key: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\SrpV2\Appx'
+    value: 'EnforcementMode'
+    type: 'dword'
+    data: '00000001'
+  HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\SrpV2\Appx\39eb49c7-1d09-4f07-a069-c2592697defd\Value:
+    key: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\SrpV2\Appx\39eb49c7-1d09-4f07-a069-c2592697defd'
+    value: 'Value'
+    type: 'string'
+    data: "<FilePublisherRule Id=\"39eb49c7-1d09-4f07-a069-c2592697defd\" Name=\"Signed by Microsoft Corporation\" Description=\"\" UserOrGroupSid=\"S-1-1-0\" Action=\"Allow\"><Conditions><FilePublisherCondition PublisherName=\"CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US\" ProductName=\"*\" BinaryName=\"*\"><BinaryVersionRange LowSection=\"*\" HighSection=\"*\"/></FilePublisherCondition></Conditions></FilePublisherRule>"
+  HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\SrpV2\Appx\9a3cbc9c-2e37-4f3f-8e9f-883f71b3b8cf\Value:
+    key: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\SrpV2\Appx\9a3cbc9c-2e37-4f3f-8e9f-883f71b3b8cf'
+    value: 'Value'
+    type: 'string'
+    data: "<FilePublisherRule Id=\"9a3cbc9c-2e37-4f3f-8e9f-883f71b3b8cf\" Name=\"Signed by Microsoft Corporation (Windows)\" Description=\"\" UserOrGroupSid=\"S-1-1-0\" Action=\"Allow\"><Conditions><FilePublisherCondition PublisherName=\"CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US\" ProductName=\"*\" BinaryName=\"*\"><BinaryVersionRange LowSection=\"*\" HighSection=\"*\"/></FilePublisherCondition></Conditions></FilePublisherRule>"
   HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\SrpV2\Dll\AllowWindows:
     key: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\SrpV2\Dll'
     value: 'AllowWindows'
     type: 'dword'
     data: '00000000'
+  HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\SrpV2\Dll\EnforcementMode:
+    key: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\SrpV2\Dll'
+    value: 'EnforcementMode'
+    type: 'dword'
+    data: '00000001'
+  HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\SrpV2\Dll\b9c414fb-f2c9-4545-ae3a-e6b186e315cc\Value:
+    key: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\SrpV2\Dll\b9c414fb-f2c9-4545-ae3a-e6b186e315cc'
+    value: 'Value'
+    type: 'string'
+    data: "<FilePathRule Id=\"b9c414fb-f2c9-4545-ae3a-e6b186e315cc\" Name=\"%WINDIR%\\*\" Description=\"\" UserOrGroupSid=\"S-1-1-0\" Action=\"Allow\"><Conditions><FilePathCondition Path=\"%WINDIR%\\*\"/></Conditions><Exceptions><FilePathCondition Path=\"%SYSTEM32%\\spool\\drivers\\color\\*\"/><FilePathCondition Path=\"%SYSTEM32%\\Tasks\\*\"/><FilePathCondition Path=\"%WINDIR%\\Tasks\\*\"/><FilePathCondition Path=\"%WINDIR%\\Temp\\\"/></Exceptions></FilePathRule>"
+  HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\SrpV2\Dll\c649fb33-9678-4800-a513-6f4f5649e0bf\Value:
+    key: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\SrpV2\Dll\c649fb33-9678-4800-a513-6f4f5649e0bf'
+    value: 'Value'
+    type: 'string'
+    data: "<FilePathRule Id=\"c649fb33-9678-4800-a513-6f4f5649e0bf\" Name=\"%PROGRAMFILES%\\*\" Description=\"\" UserOrGroupSid=\"S-1-1-0\" Action=\"Allow\"><Conditions><FilePathCondition Path=\"%PROGRAMFILES%\\*\"/></Conditions></FilePathRule>"
   HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\SrpV2\Exe\EnforcementMode:
     key: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\SrpV2\Exe'
     value: 'EnforcementMode'
@@ -25,16 +55,11 @@ puppet_applocker::settings::registry_options:
     value: 'Value'
     type: 'string'
     data: "<FilePathRule Id=\"18c57223-831c-46a0-bb7d-d655629814cf\" Name=\"%PROGRAMFILES%\\*\" Description=\"\" UserOrGroupSid=\"S-1-1-0\" Action=\"Allow\"><Conditions><FilePathCondition Path=\"%PROGRAMFILES%\\*\"/></Conditions></FilePathRule>"
-  HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\SrpV2\Exe\921cc481-6e17-4653-8f75-050b80acca20\Value:
-    key: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\SrpV2\Exe\921cc481-6e17-4653-8f75-050b80acca20'
+  HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\SrpV2\Exe\402e6f49-492a-4f8b-b559-a12854469e04\Value:
+    key: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\SrpV2\Exe\402e6f49-492a-4f8b-b559-a12854469e04'
     value: 'Value'
     type: 'string'
-    data: "<FilePathRule Id=\"921cc481-6e17-4653-8f75-050b80acca20\" Name=\"(Default Rule) All files located in the Program Files folder\" Description=\"Allows members of the Everyone group to run applications that are located in the Program Files folder.\" UserOrGroupSid=\"S-1-1-0\" Action=\"Allow\"><Conditions><FilePathCondition Path=\"%PROGRAMFILES%\\*\"/></Conditions></FilePathRule>"
-  HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\SrpV2\Exe\a61c8b2c-a319-4cd0-9690-d2177cad7b51\Value:
-    key: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\SrpV2\Exe\a61c8b2c-a319-4cd0-9690-d2177cad7b51'
-    value: 'Value'
-    type: 'string'
-    data: "<FilePathRule Id=\"a61c8b2c-a319-4cd0-9690-d2177cad7b51\" Name=\"(Default Rule) All files located in the Windows folder\" Description=\"Allows members of the Everyone group to run applications that are located in the Windows folder.\" UserOrGroupSid=\"S-1-1-0\" Action=\"Allow\"><Conditions><FilePathCondition Path=\"%WINDIR%\\*\"/></Conditions></FilePathRule>"
+    data: "<FilePathRule Id=\"402e6f49-492a-4f8b-b559-a12854469e04\" Name=\"%WINDIR%\\*\" Description=\"\" UserOrGroupSid=\"S-1-1-0\" Action=\"Allow\"><Conditions><FilePathCondition Path=\"%WINDIR%\\*\"/></Conditions><Exceptions><FilePathCondition Path=\"%SYSTEM32%\\spool\\drivers\\color\\*\"/><FilePathCondition Path=\"%SYSTEM32%\\Tasks\\*\"/><FilePathCondition Path=\"%WINDIR%\\Tasks\\*\"/><FilePathCondition Path=\"%WINDIR%\\Temp\\*\"/></Exceptions></FilePathRule>"
   HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\SrpV2\Msi\AllowWindows:
     key: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\SrpV2\Msi'
     value: 'AllowWindows'
@@ -45,3 +70,18 @@ puppet_applocker::settings::registry_options:
     value: 'AllowWindows'
     type: 'dword'
     data: '00000000'
+  HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\SrpV2\Script\EnforcementMode:
+    key: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\SrpV2\Script'
+    value: 'EnforcementMode'
+    type: 'dword'
+    data: '00000001'
+  HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\SrpV2\Script\5f1f7b83-d3cc-4231-b4c0-2f4b3005f237\Value:
+    key: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\SrpV2\Script\5f1f7b83-d3cc-4231-b4c0-2f4b3005f237'
+    value: 'Value'
+    type: 'string'
+    data: "<FilePathRule Id=\"5f1f7b83-d3cc-4231-b4c0-2f4b3005f237\" Name=\"%PROGRAMFILES%\\*\" Description=\"\" UserOrGroupSid=\"S-1-1-0\" Action=\"Allow\"><Conditions><FilePathCondition Path=\"%PROGRAMFILES%\\*\"/></Conditions></FilePathRule>"
+  HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\SrpV2\Script\a3790555-4ff1-42b5-93f2-1ec6277a48cd\Value:
+    key: HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\SrpV2\Script\a3790555-4ff1-42b5-93f2-1ec6277a48cd
+    value: 'Value'
+    type: 'string'
+    data: "<FilePathRule Id=\"a3790555-4ff1-42b5-93f2-1ec6277a48cd\" Name=\"%WINDIR%\\*\" Description=\"\" UserOrGroupSid=\"S-1-1-0\" Action=\"Allow\"><Conditions><FilePathCondition Path=\"%WINDIR%\\*\"/></Conditions><Exceptions><FilePathCondition Path=\"%SYSTEM32%\\Com\\dmp\\*\"/><FilePathCondition Path=\"%SYSTEM32%\\FxsTmp\\*\"/><FilePathCondition Path=\"%SYSTEM32%\\spool\\drivers\\color\\*\"/><FilePathCondition Path=\"%SYSTEM32%\\spool\\PRINTERS\\*\"/><FilePathCondition Path=\"%SYSTEM32%\\spool\\SERVERS\\*\"/><FilePathCondition Path=\"%SYSTEM32%\\Tasks\\*\"/><FilePathCondition Path=\"%WINDIR%\\Registration\\CRMLog\\*\"/><FilePathCondition Path=\"%WINDIR%\\Tasks\\*\"/><FilePathCondition Path=\"%WINDIR%\\Temp\\*\"/><FilePathCondition Path=\"%WINDIR%\\tracing\\*\"/></Exceptions></FilePathRule>"
