@@ -1,1 +1,7 @@
---- {}
+---
+puppet_applocker::settings::registry_options:
+  HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\SrpV2\Appx\AllowWindows:
+    key: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\SrpV2\Appx'
+    value: 'AllowWindows'
+    type: 'dword'
+    data: '00000000'

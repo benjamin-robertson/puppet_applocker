@@ -5,6 +5,7 @@
 # @example
 #   include puppet_applocker
 class puppet_applocker {
-  include puppet_applocker::services
+  #include puppet_applocker::services
+  include puppet_applocker::settings
 
 }
