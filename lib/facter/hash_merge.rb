@@ -5,7 +5,7 @@ Facter.add(:hash_merge) do
   setcode do
     hash1 = {1=>"One", 2=>"Two", 3=>"Three"}
     hash2 = {4=>"First", 5=>"Second", 6=>"Third"}
-    hash3 = hast1.merge hash2
+    hash3 = hash1.merge hash2
     hash3
   end
 end
